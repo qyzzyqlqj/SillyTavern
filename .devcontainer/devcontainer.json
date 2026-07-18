@@ -1,0 +1,21 @@
+{
+  "name": "SillyTavern Cloud",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+
+  "features": {},
+
+  "forwardPorts": [
+    8000
+  ],
+
+  "portsAttributes": {
+    "8000": {
+      "label": "SillyTavern",
+      "onAutoForward": "openBrowser"
+    }
+  },
+
+  "postCreateCommand": "npm install",
+
+  "postStartCommand": "./scripts/start-cloud.sh"
+}
