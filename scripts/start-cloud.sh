@@ -9,7 +9,7 @@ if [ ! -d "data/.git" ]; then
     rm -rf data
 
     git clone \
-    https://${GITHUB_TOKEN}@github.com/qyzzyqlqj/sillytavern_profiles.git \
+    https://${PROFILE_TOKEN}@github.com/qyzzyqlqj/sillytavern_profiles.git \
     data
 
 else
